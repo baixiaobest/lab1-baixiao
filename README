@@ -1,0 +1,22 @@
+This is a skeleton for CS 111 Lab 1.
+
+Replace this README file with notes on your implementation.
+Mentions any special features or limitations.
+
+This project is done by Baixiao Huang student ID: 504313981
+     	     	    and Jiayi Lu student ID:004079546
+Answers:
+1: absolute time is not necessary in non-decreasing order. 
+For example command sort dictionary.txt; echo a
+if the dictionary.txt is too big, echo may finish before
+sorting can finish.
+2:Yes, for example a sequence command a;b
+a and b can be executed at the same time, so the real time
+will appear to be less than total user and system time of
+a and b.
+3.No, if real time is negative, process is completed before
+it starts, which is impossible. For user time and system 
+time, they represents the usage of CPU, and they are non-
+negative.
+4.All parent processes wait for its children, no way the
+output will be interleaved.
